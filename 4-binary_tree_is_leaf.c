@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stddef.h>
 
 truct binary_tree_node{
@@ -19,4 +20,22 @@ return (0);
 }
 
 return (((node->left == NULL) && (node->right == NULL)) ? 1 : 0);
+=======
+#include "binary_trees.h"
+/**
+ * binary_tree_is_leaf - A function that deletes an entire binary tree
+ * @node: a pointer to the node to check
+ * Return: Null if null, 1 if it's leaf and 0 if otherwise
+ */
+
+int binary_tree_is_leaf(const binary_tree_t *node)
+{
+	if (node == NULL)
+		return (0);
+
+	if ((node->left) || (node->right) != NULL)
+		return (0);
+	else
+		return (1);
+>>>>>>> f275486c36fbf3526f262e5b2e8ac66d9a2a15ea
 }
