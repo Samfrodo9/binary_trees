@@ -52,6 +52,6 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 binary_tree_t **get_ancestors(const binary_tree_t *node);
 binary_tree_t *find_lowest_common_ancestor(binary_tree_t **ancestors_first, binary_tree_t **ancestors_second);
-
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
 #endif
